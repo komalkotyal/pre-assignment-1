@@ -100,4 +100,8 @@ public class Position {
         }
         return new Position(x_coordinate,y_coordinate,this.heading);
     }
+
+    public boolean isIn(int xMax, int yMax) {
+        return (x_coordinate < xMax && y_coordinate<yMax);
+    }
 }
